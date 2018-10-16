@@ -10,11 +10,13 @@
 
         {% for item in items %}
 
-        <li>{{ item.title }}</li>
+        <li><a href="/item/{{ item.id }}"> {{ item.title }}</a></li>
 
         {% endfor %}
     </ul>
 </section>
+
+<a href="/item/add">add item</a>
 {% endblock %}
 
 {% block javascript %}
